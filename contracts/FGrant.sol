@@ -17,6 +17,7 @@ contract FGrant is Ownable {
         mapping(address => bool) upvoters;
         mapping(address => bool) downvoters;
         mapping(address => uint256) pooledFunds;
+        mapping(uint256 => bool) createdPools;
         mapping(address => bool) owners;
         address[] funders;
     }
@@ -40,8 +41,21 @@ contract FGrant is Ownable {
     event PoolCreated(uint256 proposalId, address poolCreator, uint256 amount);
     event PoolFundingCompleted(uint256 proposalId, address poolCreator);
 
+    modifier canFundProposal(uint256 proposalId) {
+        require(
+            !proposals[proposalId].fundingCompleted,
+            "Project funding is already completed"
+        );
+        require(
+            !(proposals[proposalId].funders.length > 0) ||
+                proposals[proposalId].funders[0] == msg.sender,
+            "Proposal can only be funded by the initial funder"
+        );
+        _;
+    }
+
     constructor() {
-        proposalCounter = 1;
+        proposalCounter = 0;
     }
 
     receive() external payable {}
@@ -101,7 +115,9 @@ contract FGrant is Ownable {
         emit ProposalDownvoted(proposalId, msg.sender);
     }
 
-    function fundProject(uint256 proposalId) public payable {
+    function fundProject(
+        uint256 proposalId
+    ) public payable canFundProposal(proposalId) {
         require(proposalId < proposalCounter, "Invalid proposal ID");
         Proposal storage proposal = proposals[proposalId];
 
@@ -114,11 +130,9 @@ contract FGrant is Ownable {
         require(success, "Insufficient funds");
 
         proposal.totalFunds += msg.value;
+        proposal.funders.push(msg.sender);
 
-        if (
-            !proposal.fundingCompleted &&
-            proposal.totalFunds >= proposal.fundingGoal
-        ) {
+        if (proposal.totalFunds >= proposal.fundingGoal) {
             proposal.fundingCompleted = true;
 
             emit ProposalFundingCompleted(proposalId);
@@ -138,6 +152,10 @@ contract FGrant is Ownable {
             !proposal.fundingCompleted,
             "Project funding is already completed"
         );
+        require(
+            !proposal.createdPools[proposalId],
+            "Pool already created for this proposal"
+        );
         require(amount > 0, "Invalid contribution amount");
 
         (bool success, ) = msg.sender.call{value: amount}("");
@@ -145,6 +163,7 @@ contract FGrant is Ownable {
 
         proposal.pooledFunds[msg.sender] += amount;
         proposal.funders.push(msg.sender);
+        proposal.createdPools[proposalId] = true;
 
         if (
             !proposal.fundingCompleted &&
@@ -167,6 +186,10 @@ contract FGrant is Ownable {
         require(
             !proposal.fundingCompleted,
             "Project funding has been completed"
+        );
+        require(
+            proposal.createdPools[proposalId],
+            "No pool exists for this proposal"
         );
         require(amount > 0, "Invalid contribution amount");
 
