@@ -40,6 +40,11 @@ contract FGrant is Ownable {
     event ProposalFundingCompleted(uint256 proposalId);
     event PoolCreated(uint256 proposalId, address poolCreator, uint256 amount);
     event PoolFundingCompleted(uint256 proposalId, address poolCreator);
+    event ProposalFundsWithdrawn(
+        uint256 proposalId,
+        address proposalCreator,
+        uint256 withdrawalAmount
+    );
 
     modifier canFundProposal(uint256 proposalId) {
         require(
@@ -211,6 +216,24 @@ contract FGrant is Ownable {
         Proposal storage proposal = proposals[proposalId];
 
         return proposal.owners[checkOwner];
+    }
+
+    function withdrawProposalFunds(uint256 proposalId) external {
+        require(proposalId < proposalCounter, "Invalid proposal ID");
+        Proposal storage proposal = proposals[proposalId];
+        require(
+            msg.sender == proposal.proposer,
+            "Only the proposal creator can withdraw funds"
+        );
+        require(proposal.fundingCompleted, "Project funding is not completed");
+
+        uint256 withdrawalAmount = proposal.fundingGoal - proposal.totalFunds;
+        require(withdrawalAmount > 0, "No funds available for withdrawal");
+
+        (bool success, ) = msg.sender.call{value: withdrawalAmount}("");
+        require(success, "Insufficient funds");
+
+        emit ProposalFundsWithdrawn(proposalId, msg.sender, withdrawalAmount);
     }
 
     function withdrawFunds(uint256 amount) external onlyOwner {
