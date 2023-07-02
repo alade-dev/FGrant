@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import user from "C:/Users/Tesle/PycharmProjects/fantomgrant/public/assets/Ellipse2.png";
-import upload from "C:/Users/Tesle/PycharmProjects/fantomgrant/public/assets/upload.png";
+import user from "../../public/assets/Ellipse2.png";
+import upload from "../../public/assets/upload.png";
 import Link from "next/link";
 import { FiCopy } from "react-icons/fi";
 
@@ -19,14 +19,13 @@ const Description = () => {
   const [inputValues, setInputValues] = useState(initialValues);
   const [showNotification, setShowNotification] = useState(false);
 
-
   const handleCopyClick = (index) => {
     const valueToCopy = inputValues[index].value;
     navigator.clipboard.writeText(valueToCopy);
-     setShowNotification(true);
-     setTimeout(() => {
-       setShowNotification(false);
-     }, 2000);
+    setShowNotification(true);
+    setTimeout(() => {
+      setShowNotification(false);
+    }, 2000);
   };
 
   const handleInputChange = (index, value) => {

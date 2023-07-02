@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import user from 'C:/Users/Tesle/PycharmProjects/fantomgrant/public/assets/Ellipse2.png';
+import user from "../../public/assets/Ellipse2.png";
 import Link from 'next/link';
 
 const ActiveProposal = () => {
