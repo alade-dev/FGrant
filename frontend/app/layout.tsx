@@ -1,4 +1,4 @@
-'use client'
+
 import { Navbar } from '@/components'
 import './globals.css'
 import { CacheProvider } from '@chakra-ui/next-js'
