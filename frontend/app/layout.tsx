@@ -1,8 +1,5 @@
-
 import { Navbar } from '@/components'
 import './globals.css'
-import { CacheProvider } from '@chakra-ui/next-js'
-import { ChakraProvider } from '@chakra-ui/react'
 
 
 
@@ -20,12 +17,8 @@ export default function RootLayout({
 
     <html lang="en">
       <body className='relative'>
-        <CacheProvider>
-          <ChakraProvider>
-            <Navbar />
-            {children}
-          </ChakraProvider>
-        </CacheProvider>
+        <Navbar />
+        {children}
       </body>
     </html>
 
