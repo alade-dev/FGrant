@@ -42,7 +42,7 @@ const Proposals = () => {
                             <h1 className='text-[#626262] text-[30px] font-semibold my-3 bg-white '>In campaign</h1>
                         <div className="lg:h-[100%] w-[100%] justify-between  ">
                             {projects.map((project) => (
-                                <div key={project.id} className='bg-[#D5DFF2] p-[30px] ' >
+                                <div key={project.id} className='bg-[#BCD7CB] p-[30px] ' >
                                     <div className='flex justify-between '>
                                         <div className="space-x-6 flex items-center ">
                                             <Image src={user} alt="" className="lg:h-[120px] mt-1 h-[50px] w-[50px] lg:w-[120px]" />
@@ -55,7 +55,7 @@ const Proposals = () => {
                                             <p className=" text-black lg:text-[24px] text-[12px] text-center font-semibold ">$FLOW 500,000</p>
                                         </div>
                                     </div>
-                                    <div className='my-[43px] lg:h-[116px] lg:w-[915px]'>
+                                    <div className='my-[43px] lg:h-[116px] lg:w-[98%]'>
                                         <p className='text-[#303030] lg:text-2xl text-sm'>{project.description}</p>
                                     </div>
                                     <div className='flex justify-end  items-end'>

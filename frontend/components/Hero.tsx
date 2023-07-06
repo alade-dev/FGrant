@@ -143,17 +143,17 @@ const Hero = () => {
         </div>
         <div className='flex mx-auto justify-center  pl-[134px] pr-[143px] '>
           <div className=" lg:grid relative left-5 justify-center items-center my-6 flex max-w-6xl lg:grid-cols-1 lg:gap-y-7">
-            <div className="max-w-xl  bg-[#00EF8B] ">
+            <div className="max-w-xl  bg-[#00EF8B]">
               <p className='text-center text-white py-[20px] px-[45.5px] text-base '>
                 Project creators submit their proposals to Flow Grant, outlining their innovative ideas, project scope, timeline, and funding requirements. The proposals undergo a thorough evaluation process by the funder(s) to assess
               </p>
             </div>
-            <div className="max-w-xl  bg-[#00EF8B]  ">
+            <div className="max-w-xl  bg-[#00EF8B]">
               <p className='text-center text-white py-[20px] px-[45.5px] text-base '>
                 Once project proposals are approved, funders can participate in the funding allocation process individually or seek partnerships by creating campaigns and stating their desired contribution amount on Flow Grant.
               </p>
             </div>
-            <div className="max-w-xl  bg-[#00EF8B]  ">
+            <div className="max-w-xl  bg-[#00EF8B]">
               <p className='text-center text-white py-[20px] px-[45.5px] text-base '>
                 Funders can explore campaigns on Flow Grant, partnering to fund promising projects after thorough review of feasibility, business opportunities, and wealth creation.
               </p>
@@ -179,9 +179,9 @@ const Hero = () => {
                 key={feature.description}
                 className="flex justify-center items-center flex-row gap-6 sm:flex-row md:flex-col lg:flex-col"
               >
-                <div className="flex h-[141px] w-[170px] align-middle items-center justify-center rounded-md bg-[#E2ECFD] text-white sm:shrink-0">
+                <div className="flex h-[141px] w-[170px] align-middle items-center justify-center rounded-md bg-[#BCD7CB] text-white sm:shrink-0">
                   <div className="h-[108px] lg:flex flex align-middle items-center justify-center w-[94px]">
-                    <Image src={feature.url} className='align-middle items-center justify-center' alt="icon" />
+                    <Image src={feature.url} className='align-middle items-center justify-center ' alt="icon" />
                   </div>
                 </div>
                 <div className="sm:min-w-0  lg:flex lg:flex-shrink-0 text-center justify-center  sm:flex-1">

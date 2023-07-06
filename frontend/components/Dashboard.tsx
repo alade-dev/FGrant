@@ -29,7 +29,7 @@ const Dashboard: React.FC<ChartData> = ({ labels, datasets }: ChartData) => {
 
     return (
         <>
-            <div className="flex items-start flex-col bg-[#D5DFF2] w-[100%] -ml-4">
+            <div className="flex items-start flex-col bg-[#BCD7CB] w-[100%] -ml-4">
                 <p className="dashboard-txt flex flex-col text-bold justify-center items-center h-[68px] text-[#131316] text-[20px] leading-[24px]">
                     Dashboard
                 </p>
