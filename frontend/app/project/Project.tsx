@@ -8,19 +8,19 @@ const projects = [
         id: 0,
         name: 'AbdulAzeez Tasleem',
         title: 'Blockchain education cohort',
-        description: "Don't wait any longer.Take the first step towards revolutionizing the blockchain industry by getting started with Fantom Grant today.Together, let's unleash the potential of tomorrow and make your vision a reality.",
+        description: "Don't wait any longer.Take the first step towards revolutionizing the blockchain industry by getting started with Flow Grant today.Together, let's unleash the potential of tomorrow and make your vision a reality.",
     },
     {
         id: 1,
         name: 'AbdulAzeez Tasleem',
         title: 'NFT marketplace application',
-        description: "Don't wait any longer.Take the first step towards revolutionizing the blockchain industry by getting started with Fantom Grant today.Together, let's unleash the potential of tomorrow and make your vision a reality.",
+        description: "Don't wait any longer.Take the first step towards revolutionizing the blockchain industry by getting started with Flow Grant today.Together, let's unleash the potential of tomorrow and make your vision a reality.",
     },
     {
         id: 2,
         name: 'AbdulAzeez Tasleem',
         title: 'NFT marketplace application',
-        description: "Don't wait any longer.Take the first step towards revolutionizing the blockchain industry by getting started with Fantom Grant today.Together, let's unleash the potential of tomorrow and make your vision a reality.",
+        description: "Don't wait any longer.Take the first step towards revolutionizing the blockchain industry by getting started with Flow Grant today.Together, let's unleash the potential of tomorrow and make your vision a reality.",
     }
 ]
 

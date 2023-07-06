@@ -187,19 +187,19 @@ const Description = () => {
                 <p className="text-[#303030] lg:text-2xl text-sm">
                   Don&apos;t wait any longer. Take the first step towards
                   revolutionizing the blockchain industry by getting started
-                  with Fantom Grant today. Together, let&apos;s unleash the
+                  with Flow Grant today. Together, let&apos;s unleash the
                   potential of tomorrow and make your vision a reality.
                 </p>
                 <p className="text-[#303030] lg:text-2xl text-sm">
                   Don&apos;t wait any longer. Take the first step towards
                   revolutionizing the blockchain industry by getting started
-                  with Fantom Grant today. Together, let&apos;s unleash the
+                  with Flow Grant today. Together, let&apos;s unleash the
                   potential of tomorrow and make your vision a reality.
                 </p>
                 <p className="text-[#303030] lg:text-2xl text-sm">
                   Don&apos;t wait any longer. Take the first step towards
                   revolutionizing the blockchain industry by getting started
-                  with Fantom Grant today. Together, let&apos;s unleash the
+                  with Flow Grant today. Together, let&apos;s unleash the
                   potential of tomorrow and make your vision a reality.
                 </p>
               </div>

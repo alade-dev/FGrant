@@ -14,17 +14,17 @@ import Footer from './Footer'
 const features = [
   {
     description:
-      "Funding Opportunities: Fantom Grant offers funders the chance to support innovative projects within the Fantom ecosystem, providing financial resources to drive their development, adoption, and success.",
+      "Funding Opportunities: Flow Grant offers funders the chance to support innovative projects within the Flow ecosystem, providing financial resources to drive their development, adoption, and success.",
     url: money,
   },
   {
     description:
-      "Transparent Evaluation Process: Fantom Grant implements a rigorous and transparent evaluation process to assess project proposals, ensuring that funded projects are aligned with the ecosystem's goals and have the potential to make a significant impact.",
+      "Transparent Evaluation Process: Flow Grant implements a rigorous and transparent evaluation process to assess project proposals, ensuring that funded projects are aligned with the ecosystem's goals and have the potential to make a significant impact.",
     url: file,
   },
   {
     description:
-      " Community Engagement: Fantom Grant encourages community participation through voting and governance mechanisms, allowing stakeholders to have a voice in the funding decisions, project selection, and shaping the future of the Fantom ecosystem.",
+      " Community Engagement: Flow Grant encourages community participation through voting and governance mechanisms, allowing stakeholders to have a voice in the funding decisions, project selection, and shaping the future of the Flow ecosystem.",
     url: people,
   }
 ]
@@ -123,16 +123,16 @@ const Hero = () => {
       </div>
       <div className=' flex flex-col mt-6 mb-[25px] '>
         <div>
-          <h4 className='font-semibold mx-auto max-w-6xl text-xs justify-start lg:text-4xl'>Why Fantom Grant </h4>
+          <h4 className='font-semibold mx-auto max-w-6xl text-xs justify-start lg:text-4xl'>Why Flow Grant </h4>
         </div>
         <div>
           <div className="mx-auto mt-10 max-w-6xl lg:space-y-3  flex-shrink-0 space-y-2 flex flex-col lg:gap-y-4 ">
-            <p className='text-[7px] font-semibold lg:font-normal lg:text-base   text-[#303030]'>Welcome to Fantom Grant, the premier platform that connects visionary funders and passionate proposers to catalyze groundbreaking projects within the Fantom ecosystem. Whether you&apos;re seeking funding for your innovative idea or looking to support cutting-edge ventures, Fantom Grant is the gateway to unlock limitless possibilities.
+            <p className='text-[7px] font-semibold lg:font-normal lg:text-base   text-[#303030]'>Welcome to Flow Grant, the premier platform that connects visionary funders and passionate proposers to catalyze groundbreaking projects within the Flow ecosystem. Whether you&apos;re seeking funding for your innovative idea or looking to support cutting-edge ventures, Flow Grant is the gateway to unlock limitless possibilities.
             </p>
             <p className='text-[7px] font-semibold lg:font-normal lg:text-base  text-[#303030]'>Our platform fosters collaboration, transparency, and growth, enabling you to make a lasting impact in the world of blockchain technology.
-              Connect with like-minded individuals who share your passion for innovation. With Fantom Grant, you have the power to shape the landscape of blockchain and create a legacy of transformable projects.</p>
+              Connect with like-minded individuals who share your passion for innovation. With Flow Grant, you have the power to shape the landscape of blockchain and create a legacy of transformable projects.</p>
             <p className='text-[7px] font-semibold lg:font-normal lg:text-base  text-[#303030]'>
-              Don&apos;t wait any longer. Take the first step towards revolutionizing the blockchain industry by getting started with Fantom Grant today. Together, let&apos;s unleash the potential of tomorrow and make your vision a reality.
+              Don&apos;t wait any longer. Take the first step towards revolutionizing the blockchain industry by getting started with Flow Grant today. Together, let&apos;s unleash the potential of tomorrow and make your vision a reality.
             </p>
           </div>
         </div>
@@ -145,17 +145,17 @@ const Hero = () => {
           <div className=" lg:grid relative left-5 justify-center items-center my-6 flex max-w-6xl lg:grid-cols-1 lg:gap-y-7">
             <div className="max-w-xl  bg-[#00EF8B] ">
               <p className='text-center text-white py-[20px] px-[45.5px] text-base '>
-                Project creators submit their proposals to Fantom Grant, outlining their innovative ideas, project scope, timeline, and funding requirements. The proposals undergo a thorough evaluation process by the funder(s) to assess
+                Project creators submit their proposals to Flow Grant, outlining their innovative ideas, project scope, timeline, and funding requirements. The proposals undergo a thorough evaluation process by the funder(s) to assess
               </p>
             </div>
             <div className="max-w-xl  bg-[#00EF8B]  ">
               <p className='text-center text-white py-[20px] px-[45.5px] text-base '>
-                Once project proposals are approved, funders can participate in the funding allocation process individually or seek partnerships by creating campaigns and stating their desired contribution amount on Fantom Grant.
+                Once project proposals are approved, funders can participate in the funding allocation process individually or seek partnerships by creating campaigns and stating their desired contribution amount on Flow Grant.
               </p>
             </div>
             <div className="max-w-xl  bg-[#00EF8B]  ">
               <p className='text-center text-white py-[20px] px-[45.5px] text-base '>
-                Funders can explore campaigns on Fantom Grant, partnering to fund promising projects after thorough review of feasibility, business opportunities, and wealth creation.
+                Funders can explore campaigns on Flow Grant, partnering to fund promising projects after thorough review of feasibility, business opportunities, and wealth creation.
               </p>
             </div>
           </div>

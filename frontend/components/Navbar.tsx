@@ -26,7 +26,7 @@ const Navbar = () => {
         }`} aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Fantom grant</span>
+            <span className="sr-only">Flow grant</span>
             <Image
               className="flex-shrink-0"
               src={logo}

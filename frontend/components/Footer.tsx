@@ -10,7 +10,7 @@ const Footer = () => {
     const container = wordContainerRef.current;
 
     let currentIndex = 0;
-    const words = ["As a project creator, submit your innovative ideas to Fantom Grant for a chance to receive funding and support for your project within the Fantom ecosystem.", "As a funder, you can actively provide financial support to innovative projects that align with your interests, investment criteria, and the development of the Fantom ecosystem."];
+    const words = ["As a project creator, submit your innovative ideas to Flow Grant for a chance to receive funding and support for your project within the Flow ecosystem.", "As a funder, you can actively provide financial support to innovative projects that align with your interests, investment criteria, and the development of the Flow ecosystem."];
     const duration = 2000; // Duration for each word (in milliseconds)
     const stopDuration = 3000; // Duration for the word to stay at the center (in milliseconds)
 
@@ -68,7 +68,7 @@ const Footer = () => {
               className=""
               whileHover={{ scale: 1, rotate: 0 }}
             >
-              As a project creator, submit your innovative ideas to Fantom Grant for a chance to receive funding and support for your project within the Fantom ecosystem.
+              As a project creator, submit your innovative ideas to Flow Grant for a chance to receive funding and support for your project within the Flow ecosystem.
             </motion.h1> */}
             <AnimatePresence>
               <motion.span
