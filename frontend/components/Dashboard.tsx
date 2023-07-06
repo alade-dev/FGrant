@@ -43,8 +43,9 @@ const Dashboard: React.FC<ChartData> = ({ labels, datasets }: ChartData) => {
                         </span>
                         </button> */}
                 </div>
-                <div className="w-[100%] flex">
-                    <div className="w-[70%] hidden lg:grid grid-cols-2 gap-4">
+                <div className='lg:w-[100%] w-[112%]    -mr-0 mt-0  bg-white h-[20px]'></div>
+                <div className="w-[100%] bg-[#BCD7CB] mt-2 flex">
+                    <div className="w-[70%]  hidden lg:grid grid-cols-2 gap-4">
                         <div className="bg-[#21B074]  px-[21px] py-[40px] m-[24px] mb-0  w-[300px] h-[206px] ">
                             <div className="flex items-center">
                                 <Image src={wallet} alt="" className="h-[32px]  w-[32px]" />
@@ -147,11 +148,11 @@ const Dashboard: React.FC<ChartData> = ({ labels, datasets }: ChartData) => {
                         </div>
                     </div>
                 </div>
-                <div className="m-[24px] mb-0 w-[95%] mt-0">
+                <div className="m-[24px] pt-3  mb-0 w-[95%] mt-0">
                     <div className="bg-[#00EF8B] flex items-center h-[56px]">
                         <p className="ml-[25px] text-black   text-[24px] text-center font-semibold ">Overview</p>
                     </div>
-                    <div className="w-[100%]  flex justify-center items-center bg-white">
+                    <div className="w-[100%]  flex justify-center items-center  bg-white">
                         <BarChart chartData={userData} />
                     </div>
                 </div>

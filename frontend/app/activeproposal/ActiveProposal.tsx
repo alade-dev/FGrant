@@ -6,7 +6,7 @@ import Link from 'next/link';
 const ActiveProposal = () => {
     return (
         <>
-            <div className="flex items-start flex-col bg-[#BCD7CB] w-[100%] -ml-4">
+            <div className="flex items-start flex-col  w-[100%] -ml-4">
                 <p className="dashboard-txt flex flex-col text-bold justify-center items-center h-[68px] text-[#131316] text-[20px] leading-[24px]">
                     Active Proposals
                 </p>
@@ -16,7 +16,7 @@ const ActiveProposal = () => {
                     </div>
                 </div>
                 <div className="w-[100%] flex flex-col">
-                    <div className="flex flex-col lg:mt-[12px] mt-[18px]   gap-y-[12px]">
+                    <div className="flex flex-col lg:mt-[12px] mt-[18px] bg-[#BCD7CB]   gap-y-[12px]">
                         <div className="lg:h-[446px] w-[100%] border-[2px]  lg:px-[30px] lg:py-[20px] justify-between  border-[#00EF8B] p-[8px] ">
                             <div className='flex justify-between '>
                                 <div className="space-x-6 flex items-center ">

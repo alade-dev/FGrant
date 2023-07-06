@@ -27,7 +27,7 @@ const projects = [
 const Project = () => {
     return (
         <>
-            <div className="flex items-start flex-col bg-[#BCD7CB] w-[100%] -ml-4">
+            <div className="flex items-start flex-col  w-[100%] -ml-4">
                 <p className="dashboard-txt flex flex-col text-bold justify-center items-center h-[68px] text-[#131316] text-[20px] leading-[24px]">
                     Projects
                 </p>
@@ -36,8 +36,8 @@ const Project = () => {
                         <p className=" text-[24px] text-white text-center -mb-2">Welcome, Innovator ✨</p>
                     </div>
                 </div>
-                <div className="w-[100%] flex flex-col">
-                    <div className="flex flex-col lg:mt-[12px] mt-[18px]   gap-y-[12px]">
+                <div className="w-[100%]  flex flex-col">
+                    <div className="flex flex-col lg:mt-[12px] mt-[18px] bg-[#BCD7CB]   gap-y-[12px]">
                         <div className="lg:h-[100%] w-[100%] border-[2px]  lg:px-[30px] lg:py-[20px] justify-between  border-[#00EF8B] p-[8px] ">
                            {projects.map((project)=>( 
                            <div key={project.id} >
