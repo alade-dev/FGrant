@@ -99,15 +99,15 @@ const SubmitProposal: React.FC = () => {
                 <p className="dashboard-txt flex flex-col text-bold justify-center items-center h-[68px] text-[#131316] text-[20px] leading-[24px]">
                     Submit Proposal
                 </p>
-                <div className="w-[100%] lg:flex justify-between px-4 lg:bg-contain hidden  items-center " style={{ backgroundImage: `url('/images/dashframe.png')` }} >
+                <div className="w-[100%] lg:flex justify-between px-4 lg:bg-cover hidden  items-center " style={{ backgroundImage: `url('/images/dashframe.png')` }} >
                     <div className="flex flex-col justify-center  h-[64px] " >
                         <p className=" text-[24px] text-white text-center -mb-2">Welcome, Innovator ✨</p>
                     </div>
                 </div>
                 <div className="w-[100%]">
                     <div className="flex flex-col lg:mt-[12px] mt-[18px]   gap-y-[12px]">
-                        <div className="lg:h-[980px] w-[100%] border-[2px]  lg:px-[30px] lg:py-[20px] justify-between  border-[#4B82EF] p-[8px] ">
-                            <h1 className="text-[40px] text-center text-[#146BFF] font-extrabold mb-4">Submit proposal</h1>
+                        <div className="lg:h-[980px] w-[100%] border-[2px]  lg:px-[30px] lg:py-[20px] justify-between  border-[#00EF8B] p-[8px] ">
+                            <h1 className="text-[40px] text-center text-[#00EF8B] font-extrabold mb-4">Submit proposal</h1>
                             <form onSubmit={handleSubmit}>
                                 <div className="mb-6">
                                     {/* <label htmlFor="name" className="block mb-1 font-semibold">Name</label> */}
@@ -243,10 +243,10 @@ const SubmitProposal: React.FC = () => {
                                 </div>
             
                                 
-                                <div className='flex items-center mt-[50px] mb-[30px] justify-center'>
+                                <div className='flex items-center mt-[50px] mb-[20px] justify-center'>
                                     <button
                                         type="submit"
-                                        className="bg-blue-500 hover:bg-blue-600  text-white font-semibold py-3 px-8 rounded-sm"
+                                        className="bg-[#00EF8B] hover:bg-[#07a261]  text-white font-semibold py-3 px-8 rounded-sm"
                                     >
                                         Submit
                                     </button>

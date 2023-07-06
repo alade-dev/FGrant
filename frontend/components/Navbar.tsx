@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
             href="#"
-            className="rounded-md bg-[#146BFF] text-xl px-5 py-3 justify-center  font-medium text-white shadow-sm hover:bg-[#1763e6]"
+            className="rounded-md bg-[#00EF8B] text-xl px-5 py-3 justify-center  font-medium text-black shadow-sm hover:bg-[#07a261]"
           >
             Connect wallet
           </a>

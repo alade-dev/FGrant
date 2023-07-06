@@ -19,7 +19,7 @@ const Description = () => {
   ];
  
   const initialFunds = [
-    { type: "number", label: "funding amount", value: "$FTM 100,000" },
+    { type: "number", label: "funding amount", value: "$FLOW 100,000" },
     { type: "text", label: "Funder’s name", value: "Abdulsalam Ibrahim" },
     { type: "email", label: "Contact", value: "example@example.com" },
   ];
@@ -102,7 +102,7 @@ const Description = () => {
           <div className="flex flex-col lg:mt-[12px] mt-[18px]   gap-y-[12px]">
             <div className="w-[100%]  ">
               <div className="lg:mx-[169px] mx-0">
-                <div className="lg:h-[252px] lg:w-[776px] w-[450px]  mb-[34px] border-[2px] flex mx-auto  border-[#4B82EF] p-[8px] ">
+                <div className="lg:h-[252px] lg:w-[776px] w-[450px]  mb-[34px] border-[2px] flex mx-auto  border-[#00EF8B] p-[8px] ">
                   <div className="flex flex-col  mx-auto">
                     {inputFunds.map((input, index) => (
                       <div
@@ -115,7 +115,7 @@ const Description = () => {
                         >
                           {input.label}
                         </label>
-                        <div className="flex lg:w-[420px] justify-between  h-[60px]  border-2 border-[#4B82EF]">
+                        <div className="flex lg:w-[420px] justify-between  h-[60px]  border-2 border-[#00EF8B]">
                           <input
                             id={`inputField-${index}`}
                             value={input.value}
@@ -145,13 +145,13 @@ const Description = () => {
                 <div className="lg:flex justify-center lg:mb-[34px] mb-[18px] items-center  ">
                   <p className="lg:text-lg text-sm  font-normal text-[#303030]  ">
                     Explore{" "}
-                    <span className="text-[#4B82EF]"> PARTNERSHIP </span>
+                    <span className="text-[#00EF8B]"> PARTNERSHIP </span>
                     possibilities and collaborate with other like-minded funders
                     to maximize the potential of promising projects.
                   </p>
                   <div className="flex justify-center lg:mt-0 mt-2 lg:ml-[40px] ml-[10px]">
                     <div className="">
-                      <button className="text-center text-white lg:py-[10px] cursor-pointer p-2 lg:px-[30px] bg-[#4B82EF] text-[20px] lg:text-[30px]">
+                      <button className="text-center text-white lg:py-[10px] cursor-pointer p-2 lg:px-[30px] bg-[#00EF8B] text-[20px] lg:text-[30px]">
                         Fund
                       </button>
                     </div>
@@ -166,13 +166,13 @@ const Description = () => {
                     className="lg:h-[120px] mt-1 h-[50px] w-[50px] lg:w-[120px]"
                   />
                   <div className="flex gap-y-[10px] flex-col">
-                    <h3 className="text-[#4B82EF] lg:text-[40px] text-[18px] text-center font-semibold">
+                    <h3 className="text-[#00EF8B] lg:text-[40px] text-[18px] text-center font-semibold">
                       AbdulAzeez Tasleem
                     </h3>
                   </div>
                 </div>
                 <p className=" text-black lg:text-[24px] text-[12px] text-center font-semibold ">
-                  $FTM 500,000
+                  $FLOW 500,000
                 </p>
               </div>
               <div className="flex justify-between lg:pt-[48px] pt-[16px] gap-y-4">
@@ -221,7 +221,7 @@ const Description = () => {
                     >
                       {input.label}
                     </label>
-                    <div className="flex w-[430px] justify-between border-2 border-[#4B82EF]">
+                    <div className="flex w-[430px] justify-between border-2 border-[#00EF8B]">
                       <input
                         id={`inputField-${index}`}
                         type="text"

@@ -7,13 +7,13 @@ import Link from "next/link";
 
 const Campaign = () => {
   const initialFunds = [
-    { type: "number", label: "funding amount", value: "$FTM 200,000" },
+    { type: "number", label: "funding amount", value: "$FLOW 200,000" },
     { type: "text", label: "Funder’s name", value: "Abdulsalam Ibrahim" },
     { type: "email", label: "Contact", value: "example@example.com" },
   ];
 
   const initialFunds2 = [
-    { type: "number", label: "funding amount", value: "$FTM 100,000" },
+    { type: "number", label: "funding amount", value: "$FLOW 100,000" },
     { type: "text", label: "Funder’s name", value: "Abdulsalam Ibrahim" },
     { type: "email", label: "Contact", value: "example@example.com" },
   ];
@@ -52,7 +52,7 @@ const Campaign = () => {
           Campaigns
         </p>
         <div
-          className="w-[100%] lg:flex justify-between px-4 lg:bg-contain hidden  items-center "
+          className="w-[100%] lg:flex justify-between px-4 lg:bg-cover hidden  items-center "
           style={{ backgroundImage: `url('/images/dashframe.png')` }}
         >
           <div className="flex flex-col justify-center  h-[64px] ">
@@ -63,7 +63,7 @@ const Campaign = () => {
         </div>
         <div className="w-[100%] flex flex-col">
           <div className="flex flex-col lg:mt-[12px] mt-[18px]   gap-y-[12px]">
-            <div className="lg:h-[100%] w-[100%] border-[2px]  lg:px-[30px] lg:py-[20px] justify-between  border-[#4B82EF] p-[8px] ">
+            <div className="lg:h-[100%] w-[100%] border-[2px]  lg:px-[30px] lg:py-[20px] justify-between  border-[#00EF8B] p-[8px] ">
               <div className="flex justify-between ">
                 <div className="space-x-6 flex items-center ">
                   <Image
@@ -72,23 +72,23 @@ const Campaign = () => {
                     className="lg:h-[120px] mt-1 h-[50px] w-[50px] lg:w-[120px]"
                   />
                   <div className="flex gap-y-[10px] flex-col">
-                    <h3 className="text-[#4B82EF] lg:text-[40px] text-[18px] font-semibold">
+                    <h3 className="text-[#00EF8B] lg:text-[40px] text-[18px] font-semibold">
                       AbdulAzeez Tasleem
                     </h3>
-                    <p className=" text-[#626262] lg:text-[25px] text-[12px] text-start font-semibold ">
-                      Funding $FTM 300,000 and requesting partnership
+                    <p className=" text-[#626262] lg:text-[23px] text-[12px] text-start font-semibold ">
+                      Funding $FLOW 300,000 and requesting partnership
                     </p>
                   </div>
                 </div>
                 <div className="flex flex-col lg:pt-[18px] pt-[6px] gap-y-4">
                   <p className=" text-black lg:text-[24px] text-[12px] text-center font-semibold ">
-                    $FTM 500,000
+                    $FLOW 500,000
                   </p>
                   {/* <p className=" text-[#626262] lg:text-[30px] text-[14px] text-center font-semibold ">In review</p> */}
                 </div>
               </div>
               <div className="lg:mx-[30px] lg:mt-[43px] mx-0">
-                <div className="lg:h-[252px] lg:w-[776px] w-[450px]  mb-[34px] border-[2px] flex mx-auto  border-[#4B82EF] p-[8px] ">
+                <div className="lg:h-[252px] lg:w-[776px] w-[450px]  mb-[34px] border-[2px] flex mx-auto  border-[#00EF8B] p-[8px] ">
                   <div className="flex flex-col  mx-auto">
                     {inputFunds.map((input, index) => (
                       <div
@@ -101,7 +101,7 @@ const Campaign = () => {
                         >
                           {input.label}
                         </label>
-                        <div className="flex lg:w-[420px] justify-between  h-[60px]  border-2 border-[#4B82EF]">
+                        <div className="flex lg:w-[420px] justify-between  h-[60px]  border-2 border-[#00EF8B]">
                           <input
                             id={`inputField-${index}`}
                             value={input.value}
@@ -135,7 +135,7 @@ const Campaign = () => {
                 </h2>
               </div>
               <div className="lg:mx-[30px] lg:mt-[43px] mx-0">
-                <div className="lg:h-[252px] lg:w-[776px] w-[450px]  mb-[34px] border-[2px] flex mx-auto  border-[#4B82EF] p-[8px] ">
+                <div className="lg:h-[252px] lg:w-[776px] w-[450px]  mb-[34px] border-[2px] flex mx-auto  border-[#00EF8B] p-[8px] ">
                   <div className="flex flex-col  mx-auto">
                     {inputFunds2.map((input, index) => (
                       <div
@@ -148,7 +148,7 @@ const Campaign = () => {
                         >
                           {input.label}
                         </label>
-                        <div className="flex lg:w-[420px] justify-between  h-[60px]  border-2 border-[#4B82EF]">
+                        <div className="flex lg:w-[420px] justify-between  h-[60px]  border-2 border-[#00EF8B]">
                           <input
                             id={`inputField-${index}`}
                             value={input.value}
@@ -178,7 +178,7 @@ const Campaign = () => {
               </div>
               <div className="flex justify-end  items-end">
                 <Link href="/proposal" legacyBehavior passHref>
-                  <a className="text-center text-white lg:py-[10px] cursor-pointer p-2 lg:px-[30px] bg-[#4B82EF] text-[20px] lg:text-[30px]">
+                  <a className="text-center text-white lg:py-[10px] cursor-pointer p-2 lg:px-[30px] bg-[#00EF8B] text-[20px] lg:text-[30px]">
                     View
                   </a>
                 </Link>

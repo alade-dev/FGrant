@@ -74,7 +74,7 @@ const Description = () => {
           Active Proposals
         </p>
         <div
-          className="w-[100%] lg:flex justify-between px-4 lg:bg-contain hidden  items-center "
+          className="w-[100%] lg:flex justify-between px-4 lg:bg-cover hidden  items-center "
           style={{ backgroundImage: `url('/images/dashframe.png')` }}
         >
           <div className="flex flex-col justify-center  h-[86px] ">
@@ -92,13 +92,13 @@ const Description = () => {
                     className="lg:h-[120px] mt-1 h-[50px] w-[50px] lg:w-[120px]"
                   />
                   <div className="flex gap-y-[10px] flex-col">
-                    <h3 className="text-[#4B82EF] lg:text-[40px] text-[18px] text-center font-semibold">
+                    <h3 className="text-[#00EF8B] lg:text-[40px] text-[18px] text-center font-semibold">
                       AbdulAzeez Tasleem
                     </h3>
                   </div>
                 </div>
                 <p className=" text-black lg:text-[24px] text-[12px] text-center font-semibold ">
-                  $FTM 500,000
+                  $FLOW 500,000
                 </p>
               </div>
               <div className="flex justify-between lg:pt-[48px] pt-[16px] gap-y-4">
@@ -147,7 +147,7 @@ const Description = () => {
                     >
                       {input.label}
                     </label>
-                    <div className="flex w-[430px] justify-between border-2 border-[#4B82EF]">
+                    <div className="flex w-[430px] justify-between border-2 border-[#00EF8B]">
                       <input
                         id={`inputField-${index}`}
                         type="text"
@@ -183,14 +183,14 @@ const Description = () => {
                 <div className="flex space-x-[40px] justify-center">
                   <div className="">
                     <Link href="/dashboard" legacyBehavior passHref>
-                      <a className="text-center text-white lg:py-[10px] cursor-pointer p-2 lg:px-[30px] bg-[#4B82EF] text-[20px] lg:text-[30px]">
+                      <a className="text-center text-white lg:py-[10px] cursor-pointer p-2 lg:px-[30px] bg-[#00EF8B] text-[20px] lg:text-[30px]">
                         Fund
                       </a>
                     </Link>
                   </div>
                   <div className="">
                     <Link href="#" legacyBehavior passHref>
-                      <a className="text-center text-white lg:py-[10px] cursor-pointer p-2 lg:px-[30px] bg-[#4B82EF] text-[20px] lg:text-[30px]">
+                      <a className="text-center text-white lg:py-[10px] cursor-pointer p-2 lg:px-[30px] bg-[#00EF8B] text-[20px] lg:text-[30px]">
                         Partner
                       </a>
                     </Link>

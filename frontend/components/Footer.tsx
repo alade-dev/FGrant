@@ -49,7 +49,7 @@ const Footer = () => {
 
     // Start the animation
     animateWords();
-    const interval = setInterval(animateWords, duration + stopDuration);
+    const interval = setInterval(animateWords, duration + stopDuration*1.5);
 
     // Clean up the interval when component is unmounted
     return () => clearInterval(interval);
@@ -83,9 +83,9 @@ const Footer = () => {
           </div>
           <div className="mt-3 lg:flex hidden sm:justify-center">
             <Link href="/dashboard" legacyBehavior passHref>
-              <a className="rounded-md bg-white text-xl px-4 py-3 -mt-4 justify-center flex font-medium text-[#146BFF] shadow-sm hover:bg-[#1763e6] hover:text-white">
+              <a className="rounded-md bg-white text-xl px-4 py-3 -mt-4 justify-center flex font-medium text-[#00EF8B] shadow-sm hover:bg-[#07a261] hover:text-white">
                 Get started
-                <span className="text[#146BFF] hover:text-white ml-2 bg-inherit" aria-hidden="true">
+                <span className="text[#00EF8B] hover:text-white ml-2 bg-inherit" aria-hidden="true">
                   &rarr;
                 </span>
               </a>

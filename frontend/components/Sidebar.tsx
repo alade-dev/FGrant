@@ -46,7 +46,7 @@ const Sidebar: React.FC<MenuProps & { setActiveItem: (item: string) => void } & 
             {isActive ? (
                 <div className="flex bg-[#F5F8FE] justify-between h-[38px]">
                     {isActive ? (
-                        <div className="w-[4px] bg-[#4B82EF]   rounded-tr-lg rounded-br-lg"></div>
+                        <div className="w-[4px] bg-[#00EF8B]   rounded-tr-lg rounded-br-lg"></div>
                     ) : (
                         <span></span>
                     )}
@@ -54,10 +54,10 @@ const Sidebar: React.FC<MenuProps & { setActiveItem: (item: string) => void } & 
                         {icon &&
                             React.createElement(icon, {
                                 size: 20,
-                                className: `${onClick ? "text-base" : "text-[12px]"} ${isActive ? "text-[#4B82EF]" : ""
+                                className: `${onClick ? "text-base" : "text-[12px]"} ${isActive ? "text-[#00EF8B]" : ""
                                     }`,
                             })}
-                        <span className={`${isActive ? "text-[#2752E7] " : ""}`}>
+                        <span className={`${isActive ? "text-[#00EF8B] " : ""}`}>
                             <span
                                 className={`${onClick ? "text-sm font-bold " : "text-[12px]"}`}
                             >
@@ -66,7 +66,7 @@ const Sidebar: React.FC<MenuProps & { setActiveItem: (item: string) => void } & 
                             {badge && (
                                 <span
                                     className={` rounded-full px-[5px] py-[2.5px] ml-10  text-xs ${isActive
-                                        ? "text-[#4B82EF] bg-[#ede0da]"
+                                        ? "text-[#00EF8B] bg-[#ede0da]"
                                         : "text-[#56616B] bg-[#EFF1F6]"
                                         }`}
                                 >
@@ -79,7 +79,7 @@ const Sidebar: React.FC<MenuProps & { setActiveItem: (item: string) => void } & 
             ) : (
                 <div className="flex justify-between h-[38px]">
                     {isActive ? (
-                        <div className="w-[4px] bg-[#4B82EF]   rounded-tr-lg rounded-br-lg"></div>
+                        <div className="w-[4px] bg-[#00EF8B]   rounded-tr-lg rounded-br-lg"></div>
                     ) : (
                         <span></span>
                     )}
@@ -87,10 +87,10 @@ const Sidebar: React.FC<MenuProps & { setActiveItem: (item: string) => void } & 
                         {icon &&
                             React.createElement(icon, {
                                 size: 20,
-                                className: `${onClick ? "text-base" : "text-[12px]"} ${isActive ? "text-[#4B82EF]" : ""
+                                className: `${onClick ? "text-base" : "text-[12px]"} ${isActive ? "text-[#00EF8B]" : ""
                                     }`,
                             })}
-                        <span className={`${isActive ? "text-[#2752E7] " : ""}`}>
+                            <span className={`${isActive ? "text-[#00EF8B] " : ""}`}>
                             <span
                                 className={`${onClick ? "text-sm font-bold " : "text-[12px]"}`}
                             >
@@ -99,7 +99,7 @@ const Sidebar: React.FC<MenuProps & { setActiveItem: (item: string) => void } & 
                             {badge && (
                                 <span
                                     className={` rounded-full px-[5px] py-[2.5px] ml-10  text-xs ${isActive
-                                        ? "text-[#4B82EF] bg-[#ede0da]"
+                                        ? "text-[#00EF8B] bg-[#ede0da]"
                                         : "text-[#56616B] bg-[#EFF1F6]"
                                         }`}
                                 >
@@ -144,21 +144,21 @@ const Sidebar: React.FC<MenuProps & { setActiveItem: (item: string) => void } & 
                         <MenuItem
                             icon={SlHourglass}
                             text="Active proposals"
-                            badge="6"
+                            // badge="6"
                             isActive={activeItem === "item_1"}
                             onClick={() => setActiveItem("item_1")}
                         />
                         <MenuItem
                             icon={MdOutlineFilePresent}
                             text="Projects"
-                            badge="2"
+                            // badge="2"
                             isActive={activeItem === "item_2"}
                             onClick={() => setActiveItem("item_2")}
                         />
                         <MenuItem
                             icon={AiOutlineEllipsis}
                             text="Proposals"
-                            badge="2"
+                            // badge="2"
                             isActive={activeItem === "item_3"}
                             onClick={() => setActiveItem("item_3")}
                         />

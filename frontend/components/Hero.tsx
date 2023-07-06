@@ -48,7 +48,7 @@ const Hero = () => {
         wordElement.textContent = currentWord;
 
         // Animate the word
-       
+
 
         setTimeout(() => {
           wordElement.animate(
@@ -84,7 +84,7 @@ const Hero = () => {
 
   return (
     <section className='flex flex-col'>
-      <div className=' lg:pt-32 lg:pb-8 lg:px-8 lg:bg-contain lg:bg-center lg:bg-no-repeat ' style={{ backgroundImage: `url('/images/Frame.png')` }}>
+      <div className=' lg:pt-32 lg:pb-8 lg:px-8 lg:bg-cover lg:bg-no-repeat ' style={{ backgroundImage: `url('/images/Frame.png')` }}>
         <div className="mx-auto px-6 pt-[38px] lg:px-8">
           <div className="lg:text-center lg:flex flex flex-col justify-center  lg:flex-col" >
             <motion.h1
@@ -110,9 +110,9 @@ const Hero = () => {
             </p>
             <div className="mt-8 lg:flex lg:gap-x-2 hidden sm:justify-center">
               <Link href="/dashboard" legacyBehavior passHref>
-                <a className="rounded-md bg-white text-xl px-7 py-5 justify-center cursor-pointer flex font-medium text-[#146BFF] shadow-sm hover:bg-[#1763e6] hover:text-white">
+                <a className="rounded-md bg-white text-xl px-7 py-5 justify-center cursor-pointer flex font-medium text-[#00EF8B] shadow-sm hover:bg-[#00EF8B] hover:text-white">
                   Get started
-                  <span className="text[#146BFF] hover:text-white ml-2 bg-inherit" aria-hidden="true">
+                  <span className="text[#00EF8B] hover:text-white ml-2 bg-inherit" aria-hidden="true">
                     &rarr;
                   </span>
                 </a>
@@ -127,7 +127,7 @@ const Hero = () => {
         </div>
         <div>
           <div className="mx-auto mt-10 max-w-6xl lg:space-y-3  flex-shrink-0 space-y-2 flex flex-col lg:gap-y-4 ">
-            <p className='text-[7px] font-semibold lg:font-normal lg:text-base   text-[#303030]'>Welcome to Fantom Grant, the premier platform that connects visionary funders and passionate proposers to catalyze groundbreaking projects within the Fantom ecosystem. Whether you&apos;re seeking funding for your innovative idea or looking to support cutting-edge ventures, Fantom Grant is the gateway to unlock limitless possibilities.lg:text-base
+            <p className='text-[7px] font-semibold lg:font-normal lg:text-base   text-[#303030]'>Welcome to Fantom Grant, the premier platform that connects visionary funders and passionate proposers to catalyze groundbreaking projects within the Fantom ecosystem. Whether you&apos;re seeking funding for your innovative idea or looking to support cutting-edge ventures, Fantom Grant is the gateway to unlock limitless possibilities.
             </p>
             <p className='text-[7px] font-semibold lg:font-normal lg:text-base  text-[#303030]'>Our platform fosters collaboration, transparency, and growth, enabling you to make a lasting impact in the world of blockchain technology.
               Connect with like-minded individuals who share your passion for innovation. With Fantom Grant, you have the power to shape the landscape of blockchain and create a legacy of transformable projects.</p>
@@ -143,23 +143,23 @@ const Hero = () => {
         </div>
         <div className='flex mx-auto justify-center  pl-[134px] pr-[143px] '>
           <div className=" lg:grid relative left-5 justify-center items-center my-6 flex max-w-6xl lg:grid-cols-1 lg:gap-y-7">
-            <div className="max-w-xl  bg-[#146BFF] ">
+            <div className="max-w-xl  bg-[#00EF8B] ">
               <p className='text-center text-white py-[20px] px-[45.5px] text-base '>
                 Project creators submit their proposals to Fantom Grant, outlining their innovative ideas, project scope, timeline, and funding requirements. The proposals undergo a thorough evaluation process by the funder(s) to assess
               </p>
             </div>
-            <div className="max-w-xl  bg-[#146BFF]  ">
+            <div className="max-w-xl  bg-[#00EF8B]  ">
               <p className='text-center text-white py-[20px] px-[45.5px] text-base '>
                 Once project proposals are approved, funders can participate in the funding allocation process individually or seek partnerships by creating campaigns and stating their desired contribution amount on Fantom Grant.
               </p>
             </div>
-            <div className="max-w-xl  bg-[#146BFF]  ">
+            <div className="max-w-xl  bg-[#00EF8B]  ">
               <p className='text-center text-white py-[20px] px-[45.5px] text-base '>
                 Funders can explore campaigns on Fantom Grant, partnering to fund promising projects after thorough review of feasibility, business opportunities, and wealth creation.
               </p>
             </div>
           </div>
-          <div className="aspect-h-5 border-8 justify-center items-center   border-[#146BFF] aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
+          <div className="aspect-h-5 border-8 justify-center items-center   border-[#00EF8B] aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
             <Image
               src={greet}
               alt='image'
